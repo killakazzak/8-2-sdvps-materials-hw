@@ -40,7 +40,7 @@ Vagrant.configure("2") do |config|
   # your network.
   # config.vm.network "public_network"
 
-  config.vm.disk :disk, size: "15GB", primary: true
+  config.vm.disk :disk, size: "10GB", primary: true
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
@@ -57,7 +57,7 @@ Vagrant.configure("2") do |config|
   #   vb.gui = true
   #
   #   # Customize the amount of memory on the VM:
-    vb.memory = "6144"
+    vb.memory = "2048"
   end
   #
   # View the documentation for the provider you are using for more
@@ -85,7 +85,7 @@ Vagrant.configure("2") do |config|
     # run sonarqube
     # cd /vagrant && docker-compose up -d
     # add some records to /etc/hosts
-    echo -e "192.168.56.10\tubuntu-bionic\tubuntu-bionic" >> /etc/hosts
-    echo -e "192.168.56.10\tgitlab.localdomain\tgitlab" >> /etc/hosts
+    echo -e "192.168.39.10\tubuntu-bionic\tubuntu-bionic" >> /etc/hosts
+    echo -e "192.168.39.10\tgitlab.localdomain\tgitlab" >> /etc/hosts
   SHELL
 end
