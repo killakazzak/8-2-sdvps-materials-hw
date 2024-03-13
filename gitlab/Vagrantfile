@@ -70,6 +70,7 @@ Vagrant.configure("2") do |config|
     echo "proxy = 10.159.86.102:63128" >  /home/vagrant/.curlrc
     echo 'Acquire::http::Proxy "http://10.159.86.102:63128";' > /etc/apt/apt.conf
     export DEBIAN_FRONTEND=noninteractive
+    export http_proxy="http://10.159.86.102:63128"
     apt-get update
     # install docker & docker-compose
     apt-get install -y docker.io docker-compose
