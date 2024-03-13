@@ -68,7 +68,7 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     echo "proxy = 10.159.86.102:63128" >  /home/vagrant/.curlrc
-    echo 'Acquire::http::Proxy "http://10.159.86.102:6312";' > /etc/apt/apt.conf
+    echo 'Acquire::http::Proxy "http://10.159.86.102:63128";' > /etc/apt/apt.conf
     export DEBIAN_FRONTEND=noninteractive
     apt-get update
     # install docker & docker-compose
