@@ -67,7 +67,7 @@ Vagrant.configure("2") do |config|
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
-    echo "proxy = 10.159.86.102:63128" >  /home/vagrant/.curlrc
+    echo "proxy = 10.159.86.102:63128" >  ~/.curlrc
     echo 'Acquire::http::Proxy "http://10.159.86.102:63128";' > /etc/apt/apt.conf
     export DEBIAN_FRONTEND=noninteractive
     export http_proxy="http://10.159.86.102:63128"
