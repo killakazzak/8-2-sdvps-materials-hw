@@ -1,4 +1,3 @@
-#GOOOOO!!!!!!!!!!!!!
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 ENV['VAGRANT_SERVER_URL'] = 'https://vagrant.elab.pro'
