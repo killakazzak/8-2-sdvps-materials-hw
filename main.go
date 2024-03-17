@@ -16,3 +16,4 @@ func main() {
 	}
 	fmt.Println(hello(os.Args[1]))
 }
+// Say hi via the console
